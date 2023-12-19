@@ -1,0 +1,471 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+}
+
+.navigation-menu {
+  top: 0;
+  width: 100%;
+  padding: 3.5em;
+  display: flex;
+  justify-content: space-between;
+  background-color: #1b1b1b;;
+}
+
+.container-navbar nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+}
+
+header .logo {
+  max-width: 11em;
+  padding-top: 0.5em;
+}
+
+.log-in{
+  margin-left: 3em;
+}
+
+#log-in:hover , #sign-up:hover{
+  background-color: black;
+  color: #FFBF00;
+}
+
+.log-in , .sign-up{
+  background-color: #FFBF00;
+  color: #1b1b1b;
+  font-weight: 800;
+  border-radius: 25px;
+  padding: 0.8em;
+}
+
+header ul {
+  display: flex;
+  list-style: none;
+  text-align: right;
+}
+
+header ul li {
+  margin-left: 40px;
+  justify-content: center;
+  display: inline-block;
+}
+
+header ul li a {
+  font-weight: 400;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+.list-navbar li a:hover {
+    background-color: #FFBF00;
+    color: #1b1b1b;
+    font-weight: 800;
+    border-radius: 25px;
+    padding: 0.8em;
+}
+
+.introduction-container{
+    width: 100%;
+    height: 61vh;
+    overflow: hidden;
+    text-align: center;
+    background-image: url("../Images/DarkOffice.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.panel-learn-more{
+    background-color: #FFBF00;
+    padding: 2em;
+}
+
+.learn-more-title{
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    padding-bottom: 0.3em;
+    font-size: 3em;
+    font-weight: 800;
+}
+
+.container-learn-more{
+    display: flex;
+    padding: 4em; 
+    justify-content: space-evenly;
+    gap: 2em;
+}
+
+.container-learn-more h3{
+    font-weight: 800;
+    font-size: 1.5em;
+    justify-content: stretch;
+}
+
+.introduction-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 30%;
+}
+
+.introduction-container p{
+    color:#FFBF00;
+    font-size: 3em;
+    padding-left: 2em;
+    padding-right: 2em;
+    text-shadow: 1.5px 0 black;
+  }
+
+  .introduction-container a{
+    text-decoration: none;
+    background-color: rgba(27,27,27,0.7);
+    font-weight: 800;
+    border-radius: 25px;
+    padding: 0.8em;
+    margin: 2em;
+    font-size: 35px;
+    color:#FFBF00;
+  }
+  .introduction-container a:hover{
+    background-color: rgba(27,27,27,0.9);
+  }
+
+footer{
+  background-color: #1b1b1b;
+}
+
+.contacts{
+  color: #fff;
+  padding: 0.5em;
+}
+.contacts ul{
+  list-style: none;
+}
+
+.contacts li{
+  padding-left: 1em;
+}
+
+.adress-link{
+  text-decoration: underline;
+  color: white;
+}
+
+.contacts p{
+  font-size: 1.5em;
+  padding-bottom: 0.5em;
+}
+
+.pp-copy{
+  color: #fff;
+  padding: 0.5em;
+  padding-top: 3em;
+}
+
+.footer-container{
+  display: flex;
+  justify-content: space-between;
+  padding: 3em;
+}
+
+.pp-copy a{
+  text-decoration: underline;
+  color: #fff;
+}
+
+
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom:15em;
+  right:70vh;
+  border: 3px solid #FFBF00;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 20em;
+  padding: 30px;
+  background-color:black;
+  color: #f1f1f1;
+
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background:#FFBF00;
+}
+
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #FFBF00;
+  outline: none;
+}
+
+.form-container h1{
+  margin-bottom: 0.5em;
+}
+
+.form-container input::placeholder{
+  color: black;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #FFBF00;
+  color: black;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+.form-container .cancel {
+  background-color: #1b1b1b;
+  color: #FFBF00;
+}
+
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+#SignUpForm{
+  bottom:10em;
+}
+
+.main{
+  background-color: #FFBF00;
+  height: 89vh;
+}
+.main-container-dashboard{
+  grid-gap:20px;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+}
+
+.current-balance-container h6{
+  font-size: 1.5em;
+
+}
+.current-balance-container p{
+  font-size: 5em;
+  margin-left: 1em;
+  margin-top: 0.3em;
+}
+
+.available{
+  font-size: 0.2em;
+}
+.main-container-dashboard{
+  height: 100vh;
+  width: 80em;
+  margin-left: 15%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 27em 2em 15em;
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+}
+
+
+.current-balance-container{
+  grid-column: 1 / 2;
+  grid-row: 1/ 2;
+  display: flex;
+  flex-direction: column;
+  background-color: #1b1b1b;
+  padding: 2em;
+  border-radius: 1em;
+  box-shadow: 10px 10px 5px orange;
+  color: #FFBF00;
+}
+
+.current-balance-container .crball-buttons{
+  display: flex;
+  margin-top: 0.8em;
+}
+
+.current-balance-container .crball-buttons button{
+  margin: 2em;
+  padding: 1.8em;
+  background-color: #FFBF00;
+  color: #1b1b1b;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 30px;
+  box-shadow: 2px 2px black;
+}
+
+.buttons-container button:hover,
+.bnk-buttons button:hover,
+.crball-buttons button:hover{
+  color: #f1f1f1;
+}
+
+.buttons-container{
+  grid-column: 1 / 2;
+  grid-row: 2/3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttons-container div{
+  margin: 1em;
+}
+
+.buttons-container div button{
+  padding: 1.5em;
+  border-radius: 1em;
+  box-shadow: 8px 8px 5px orange;
+  background-color: #1b1b1b;
+  color: #FFBF00;
+  
+}
+
+.bank-and-cards-container{
+  grid-column: 1 / 2;
+  grid-row: 3/4;
+  justify-self: start;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  background-color: #1b1b1b;
+  padding: 3em;
+  margin-top: 7em;
+  border-radius: 1em;
+  box-shadow: 10px 10px 5px orange;
+  color: #FFBF00;
+  height: 18em;
+  width: 630px;
+}
+
+.bnk-header h6{
+  font-size: 1.5em;
+}
+
+.bnk-banks{
+ margin-bottom: 1.5em;
+ margin-top: 1.3em;
+}
+
+.bnk-banks ul li{
+  list-style-type: none;
+  padding: 5px;
+}
+
+
+.bnk-buttons{
+    display: flex;
+    flex-direction: row ;
+    
+}
+
+.bnk-buttons .btn button{
+  padding: 1em;
+  margin: 0.5em;
+  border-radius: 1.5em;
+  background-color: #FFBF00;
+  font-weight: 800;
+}
+
+
+.recent-activity-container{
+  grid-column: 3 / 4;
+  grid-row: 1/4;
+}
+
+.recent-activity-container{
+  display: flex;
+  flex-direction: column;
+  background-color: #1b1b1b;
+  padding-right: 4em;
+  border-radius: 1em;
+  color: #FFBF00;
+  height: 105%;
+  margin-top: 6em;
+  box-shadow: 10px 10px 5px orange;
+}
+
+.recent-activity-container .title{
+  font-size: 1.5em;
+  margin-bottom: 1em;
+  margin-top: 1.5em;
+  align-self: center;
+}
+
+.viewAll{
+  text-decoration: none;
+  color: #fff;
+  padding: 2em;
+}
+
+
+
+
+tbody td {
+  /* 1. Animate the background-color
+     from transparent to white on hover */
+  background-color: rgba(255,255,255,0);
+  transition: all 0.2s linear; 
+  transition-delay: 0.3s, 0s;
+  /* 2. Animate the opacity on hover */
+  opacity: 0.6;
+}
+tbody tr:hover td {
+  background-color: rgba(255, 191, 0,1);
+  color: #1b1b1b;
+  transition-delay: 0s, 0s;
+  opacity: 1;
+  font-size: 1.08em;
+}
+
+td {
+  /* 3. Scale the text using transform on hover */
+  transform-origin: center left;
+  transition-property: transform;
+  transition-duration: 0.4s;
+  transition-timing-function: ease-in-out;
+}
+tr:hover td {
+  transform: scale(1);
+}
+
+table {
+  width: 100%;
+  margin: 0 5%;
+  text-align: left;
+}
+th, td {
+  padding: 0.5em;
+}

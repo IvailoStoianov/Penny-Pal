@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+  <link rel="stylesheet" href="css/mediaQueries.css">
+  <link rel="stylesheet" href="CSS/styles.css">
+  <title>Penny Pal</title>
+</head>
+
+<script src="Scripts/FormMethods.js"></script>
+
+<body>
+    <div class="main-container">
+        <section class="navigation-menu">
+            <header class="header-navbar">
+                <div class="container-navbar">
+                    <nav>
+                            <a href="#"><img src="Images/No-backgground-logo.png" class="logo"></a>
+                        <ul class="list-navbar">
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="./HTML/Dashboard.html">DashBoard</a></li>
+                            <li><a href="./HTML/Settings.html">Settings</a></li>
+                            <li><a href="#" class="log-in" id="log-in" onclick="openForm('LogInForm')">Log In</a></li>
+                            <li><a href="#" class="sign-up" id="sign-up" onclick="openForm('SignUpForm')">Sign Up</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+        </section>
+        <section class="main-section">        
+            <div class="introduction-container">
+                <p>We won't let a single penny escape our grasp!</p>
+                <a href="#" onclick="openForm('SignUpForm')">Sign Up For Free!</a>
+            </div>
+        </section>
+        <section class="panel-learn-more">
+            <header class="learn-more-title">
+                <p>Join 0 active Penny Pal accounts worldwide.</p>
+            </header>
+            <div class="container-learn-more">
+                <div class="first-learn-more">
+                    <h3>Safer and protected</h3>
+                    <p>Shop with peace of mind. Our full-time bodyguards Dimitur Vulkov and Martin Borisov will make sure
+                        that your money is returned in time. We are so sure that they will return your money, we don't even give you
+                        an option to sue us if your money isn't returned.
+                    </p>
+                </div>
+                <div class="second-learn-more">
+                    <h3>Easy way go to into debt</h3>
+                    <p>Because of our no sue policy, any lost funds will go directly to your debt. Which 
+                        will make sure that in couple of months of using our services your bank account will be negative.
+                </p>
+                </div>
+                <div class="third-learn-more">
+                    <h3>Almost never free</h3>
+                    <p> 
+                        It's free to open a Penny Pal account, but for every transaction you make, we greedily snatch a 5% fee! That's how we roll, and we won't let a single penny escape our grasp. Penny Pal - because who needs all their money, anyway? Join us today, and let the greediness begin!
+                    </p>
+                </div>
+            </div>
+            
+        </section>
+        
+        <footer>
+            <div class="footer-container">
+                <div class="contacts">
+                        <p>Contacts:</p>
+                    <ul class="contacts-list">
+                        <li>Phone: +359 877811619</li>
+                        <li ><a target="_blank" class="adress-link" href="https://www.google.com/maps/place/%D1%83%D0%BB.+%E2%80%9E%D0%9C%D0%BB%D0%B0%D0%B4%D0%B5%D0%BD+%D0%A1%D1%82%D0%BE%D1%8F%D0%BD%D0%BE%D0%B2%E2%80%9C+6%D0%91,+2303+%D0%98%D0%B7%D1%82%D0%BE%D0%BA,+%D0%9F%D0%B5%D1%80%D0%BD%D0%B8%D0%BA/@42.6141694,23.0879863,17z/data=!3m1!4b1!4m6!3m5!1s0x40aa9e039ed6aa05:0x7d135d748487d685!8m2!3d42.6141694!4d23.0905666!16s%2Fg%2F11c26sl7hk?entry=ttu">Address: ул. „Младен Стоянов“ 6Б, 2303 Изток, Перник</a></li>
+                        <li>Email: PennyPal@gmail.com</li>
+                    </ul>
+                </div>
+                <div class="pp-copy">
+                    <p>Copyright 2023 &copy; Penny-Pal.com</p>
+                    <a href="#">Privacy Policy</a>
+                </div>
+            </div>
+        </footer>
+    
+    </div>
+
+    <div class="form-popup" id="LogInForm">
+        <form action="/action_page.php" class="form-container">
+          <h1>Login</h1>
+
+          <label for="usr"><b>Username / Email</b></label>
+          <input type="text" placeholder="Enter Username / Email" name="usr" required>
+
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+      
+          <button type="submit" class="btn">Login</button>
+          <button type="button" class="btn cancel" onclick="closeForm('LogInForm')">Close</button>
+        </form>
+      </div>
+
+      <div class="form-popup" id="SignUpForm">
+        <form action="/action_page.php" class="form-container">
+          <h1>Sign Up</h1>
+      
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Enter Email" name="email" required>
+        
+          <label for="usr"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="usr" required>
+
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+
+          <label for="cnf-psw"><b>Confirm Password</b></label>
+          <input type="password" placeholder="Confirm Password" name="cnf-psw" required>
+      
+          <button type="submit" class="btn">Login</button>
+          <button type="button" class="btn cancel" onclick="closeForm('SignUpForm')">Close</button>
+        </form>
+      </div>
+</body>
+</html>
